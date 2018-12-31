@@ -1,0 +1,87 @@
+footer {
+    position: relative;
+    height: 353px;
+    box-sizing: border-box;
+    margin-top: -355px;
+    @include gradient-top(#2c3552, #13162c);
+    border-top: 2px solid #333e61;
+
+    .centered {
+        max-width: 700px;
+        text-align: center;
+
+        .logo {
+            padding-top: 52px;
+            float: left;
+            width: 100%;
+        }
+
+        ul {
+            float: left;
+            width: 100%;
+            padding-top: 25px;
+            font-size: 14px;
+
+            li {
+                display: inline-block;
+                margin: 0 11px;
+                padding-top: 25px;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    display: inline-block;
+                    position: relative;
+                    padding-bottom: 5px;
+
+                    &:before {
+                        content: "";
+                        height: 2px;
+                        width: 0%;
+                        bottom: 0;
+                        background: #fff;
+                        position: absolute;
+                        display: inline;
+                        transition: .3s width;
+                    }
+    
+                    &:hover {
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        h6 {
+            font-size: 11px;
+            font-weight: 400;
+            color: #8b93b0;
+            float: left;
+            width: 100%;
+            padding-top: 20px;
+            line-height: 120%;
+        }
+
+        .language {
+            float: left;
+            width: 100%;
+            padding-top: 17px;
+        }
+
+        .social {
+            float: left;
+            width: 100%;
+            padding-top: 23px;
+
+            img {
+                margin: 0 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+
+}
